@@ -1,4 +1,4 @@
-## README
+## Improving Subseasonal Forecasting in the Western US with Machine Learning
 
 Code for reproducing the results in Hwang et al. [Improving Subseasonal Forecasting in the Western US with Machine Learning](https://arxiv.org/abs/1809.07394).  Please execute all instructions, scripts, and notebooks from the base directory of the repository, i.e., the directory in which README.md is located.
 
