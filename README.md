@@ -2,6 +2,32 @@
 
 Code for reproducing the results in Hwang et al. [Improving Subseasonal Forecasting in the Western US with Machine Learning](https://arxiv.org/abs/1809.07394).  Please execute all instructions, scripts, and notebooks from the base directory of the repository, i.e., the directory in which README.md is located.
 
+### Environment and packages
+
+The code was tested using Python 2.7 on Linux and macOS, and Anaconda 2.3.0. The following should be run to install the necessary packages:
+
+`conda install --channel https://conda.anaconda.org/conda-forge pygrib`
+
+`conda install netCDF4`
+
+`conda install jpeg`
+
+`conda install pandas`
+
+`conda install jupyter`
+
+`conda install scipy`
+
+`pip install https://github.com/jcrudy/py-earth/archive/master.zip`
+
+`conda install -c r r`
+
+`conda install -c conda-forge cdo`
+
+`conda install -c conda-forge hdf5=1.8.18`
+
+`conda install -c conda-forge pytables`
+
 ### Getting started
 
 After cloning the repository, please execute the following steps in preparation for generating forecasts.
@@ -42,3 +68,4 @@ After completing all of the previous steps, executing the scripts **table\_skill
 - **knn\_util.py:** supporting functionality for knn notebooks.
 - **skill.py:** supporting functionality for evaluating predictions.
 - **stepwise\_util.py:** supporting functionality for stepwise regression.
+
