@@ -34,7 +34,7 @@ After cloning the repository, please execute the following steps in preparation 
 
 1. The folder **data/fcstrodeo_nctemplates** contains the template files provided by NOAA and the contest organizers to generate the forecasts. Within **data**, create two additional subfolders **data/dataframes** and **data/forecast/cfsv2_2011-2018**.
 2. Download the SubseasonalRodeo dataset from https://doi.org/10.7910/DVN/IHBANG and place it in **data/dataframes**.
-3. Download the Reconstructed Precipitation and Temperature CFSv2 Forecasts for 2011-2018 from https://doi.org/10.7910/DVN/CEFZLV and place it in **data/forecast/cfsv2_2011-2018**.
+3. Download the Reconstructed Precipitation and Temperature CFSv2 Forecasts for 2011-2018 from https://doi.org/10.7910/DVN/CEFZLV. Place the files **cfsv2_re-contest_tmp2m-56w.h5**, **cfsv2_re-contest_tmp2m-34w.h5**, **cfsv2_re-contest_prate-56w.h5** and **cfsv2_re-contest_prate-34w.h5** in **data/dataframes**. Place the all the other files in **data/forecast/cfsv2_2011-2018**.
 4. For each of the four forecasting tasks with ground-truth identifier in {“contest\_tmp2m”, “contest\_precip”} and target horizon in {“34w”, “56w”}, create the feature and target data matrices used by several of our methods by executing the Jupyter notebook **create\_data\_matrices.ipynb** with `gt_id` set to equal to the ground-truth identifier and `target_horizon` set equal to the target horizon.
 
 ### Generating the MultiLLR (local linear regression with multitask model selection) forecasts
